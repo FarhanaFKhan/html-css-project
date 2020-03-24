@@ -9,14 +9,28 @@ body{
 
 article{
     text-align: left;
-    padding-left: 200px;
+    /*padding-left: 200px;
     padding-top: 100px;
-    padding-right: 200px;
+    padding-right: 200px;*/
+    padding: 5% 25%;
+    
 }
-article:first-child{
-    background-color:rgba(243, 179, 190, 0.87);
+div:hover{
+    background:rgba(243, 179, 190, 0.87);
+
+}
+article h3{
+    font-size: 20pt;
+}
+article:first-child :hover{
+    background:rgba(243, 179, 190, 0.87);
     font-style: italic;
+    
 }
+.article-img{
+    width:75%;
+}
+
 footer{
     font-style: italic;
     padding-left: 10px;
