@@ -7,32 +7,63 @@ body{
     text-align: center;
 }
 
-article{
+.flex-container{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding:20px 45px;
+}
+.flex-container article{
     text-align: left;
-    /*padding-left: 200px;
-    padding-top: 100px;
-    padding-right: 200px;*/
-    padding: 5% 25%;
+   padding: 20px;
+   width: 30%;
     
 }
-div:hover{
+.first-article:hover{
     background:rgba(243, 179, 190, 0.87);
 
 }
-article h3{
+.flex-container article h3{
     font-size: 20pt;
 }
-article:first-child :hover{
+.flex-container article:first-child :hover{
     background:rgba(243, 179, 190, 0.87);
     font-style: italic;
     
 }
 .article-img{
     width:75%;
+    height: 25%;
 }
+
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    margin:0;
+    padding-left: 20em;
+    justify-content: center;
+    align-content: center;
+    background:rgba(243, 179, 190, 0.87);
+    
+}
+
+.side-heading{
+    margin:0;
+    padding:0.5em 1.5em
+}
+
+
 
 footer{
     font-style: italic;
     padding-left: 10px;
     padding-top: 100px;
+}
+
+@media (max-width:1000px){
+    .flex-container{
+    display: flex;
+    flex-direction:column;
+    }
+
 }
