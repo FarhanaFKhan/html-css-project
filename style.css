@@ -80,16 +80,8 @@ footer{
         justify-content: space-between;
         align-items: center;
      }
-     .sidebar{
-        display:inline-block;
-        width:70%;
-        margin-top:25%;
-        padding-left:25%;
-    }
-    .nested{
-        display: flex;
-        flex-direction: row;
-    }
+    
+    
 }
 @media (min-width:850px){
     
