@@ -6,10 +6,7 @@ body{
    
     text-align: center;
 }
-.nested{
-    display: flex;
-    flex-direction: row;
-}
+
 .flex-container{
     display:flex;
     flex-direction:column;
@@ -17,7 +14,7 @@ body{
     height: 80%;
 }
 .tworows article{
-    text-align: left;
+   text-align: left;
    padding: 20px;
    width: 30%;
    justify-content: space-between;
@@ -28,7 +25,7 @@ body{
     width:95%;
 }
 .tworows article h3{
-    font-size: 20pt;
+    font-size: 16pt;
 }
 .tworows article:first-child :hover{
     background:rgba(243, 179, 190, 0.87);
@@ -59,23 +56,44 @@ footer{
     padding-top: 100px;
 }
 
-
-@media (max-width:1000px){
-    .nested{
-    display: flex;
+.nested{
+    display: block;
     flex-direction:column;
     }
-    .tworows article h3{
-        font-size:16pt;
-    }
 
+@media (max-width: 500px){
+    .tworows{
+        display:inline-block;
+        width:95%;
+    }
+    tworows article{
+        text-align: left;
+        padding: 20px;
+        width: 70%;
+        justify-content: space-between;
+        font-size:12pt;
+     }
 }
-@media (max-width:800px){
+@media (min-width:850px){
+    
     .tworows article{
        text-align: left;
        padding: 20px;
        width: 70%;
        justify-content: space-between;
-        
+       font-size:12pt;
     }
+    .nested{
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+@media (min-width:1000px){
+    
+
+    .tworows article h3{
+        font-size:20pt;
+    }
+
 }
