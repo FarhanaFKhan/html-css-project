@@ -66,12 +66,13 @@ footer{
         display:inline-block;
         width:95%;
     }
-    tworows article{
+    .tworows article{
         text-align: left;
-        padding: 20px;
-        width: 70%;
-        justify-content: space-between;
+        padding: 50px;
+        width: 100%;
         font-size:12pt;
+        justify-content: space-between;
+        align-items: center;
      }
 }
 @media (min-width:850px){
