@@ -1,14 +1,20 @@
-body{
-    background: rgb(245, 209, 223)
-}
 
-.navbar-custom{
+body{
+    background: pink;
+    
+}
+.navbar-custom{           /*to customize the navbar*/
     font-weight: bold;
     font-family: 'Comic Neue', cursive;
 }
 
-.card-padding{
-    padding: 20px 20px 20px 0px;
+.nested{
+    display: block;
+    flex-direction:column;
+    }
+
+.card-padding{                   /*top padding for the card*/
+    padding-top: 50px;
 }
 
 .sidebar{
@@ -21,8 +27,21 @@ body{
     
 }
 
+#divBackground{
+    background:rgba(243, 179, 190, 0.87);
+}
+
 footer{
     font-style: italic;
     padding-left: 10px;
     padding-top: 100px;
+}
+
+@media (min-width:850px){
+    
+    
+    .nested{
+        display: flex;
+        flex-direction: row;
+    }
 }
